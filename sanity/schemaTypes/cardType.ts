@@ -25,5 +25,9 @@ export const cardType = defineType({
       name: "hashtags",
       type: "string",
     }),
+    defineField({
+      name: "repoUrl",
+      type: "string",
+    }),
   ],
 });

@@ -5,4 +5,5 @@ export interface CardType {
   url: string;
   imageUrl: string;
   hashtags: string;
+  repoUrl: string;
 }

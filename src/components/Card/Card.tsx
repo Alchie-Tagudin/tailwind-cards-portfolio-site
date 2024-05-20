@@ -11,6 +11,7 @@ const Card = (props: CardProps) => {
     <a
       className="max-w-sm rounded overflow-hidden shadow-lg bg-white"
       href={url}
+      target="_blank"
     >
       <Image
         className="w-full"
