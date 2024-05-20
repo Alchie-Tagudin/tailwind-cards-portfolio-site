@@ -9,7 +9,7 @@ const Card = (props: CardProps) => {
   const arrHashtags = hashtags?.split(",");
   return (
     <a
-      className="max-w-sm rounded overflow-hidden shadow-lg bg-white"
+      className="max-w-sm rounded overflow-hidden shadow-lg bg-white h-full"
       href={url}
       target="_blank"
     >
