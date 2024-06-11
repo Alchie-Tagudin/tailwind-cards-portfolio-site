@@ -6,6 +6,26 @@ export const cardType = defineType({
   type: "document",
   fields: [
     defineField({
+      name: "type",
+      type: "string",
+      options: {
+        list: [
+          {
+            title: "Chrome Extension",
+            value: "chrome-extension",
+          },
+          {
+            title: "Website",
+            value: "website",
+          },
+          {
+            title: "Article",
+            value: "article",
+          },
+        ],
+      },
+    }),
+    defineField({
       name: "name",
       type: "string",
     }),
@@ -28,6 +48,11 @@ export const cardType = defineType({
     defineField({
       name: "repoUrl",
       type: "string",
+    }),
+    defineField({
+      title: "Is Featured",
+      name: "isFeatured",
+      type: "boolean",
     }),
   ],
 });

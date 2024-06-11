@@ -1,9 +1,9 @@
 import { client } from "@/sanity/lib/client";
 import { CardType } from "@/typings/CardType";
 import Card from "@/components/Card";
-export default async function Home() {
+export default async function Page() {
   const cards = await client.fetch<CardType[]>(
-    `*[_type == "card" && isFeatured]`,
+    `*[_type == "card" && type == "chrome-extension"]`,
   );
 
   return (
