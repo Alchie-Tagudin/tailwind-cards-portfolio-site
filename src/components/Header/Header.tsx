@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import GitHubIcon from "../../../public/github.svg";
+import LinkedInIcon from "../../../public/linkedin.svg";
 
 const Header = () => {
   return (
@@ -15,11 +18,23 @@ const Header = () => {
         </Link>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a
+            href="https://github.com/chesteralan"
+            target="_blank"
+            className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <Image src={GitHubIcon} alt="GitHub Mark" width={20} height={20} />
+          </a>
+          <a
             href="https://www.linkedin.com/in/chesteralan/"
             target="_blank"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            LinkedIn
+            <Image
+              src={LinkedInIcon}
+              alt="GitHub Mark"
+              width={20}
+              height={20}
+            />
           </a>
           <button
             data-collapse-toggle="navbar-sticky"
